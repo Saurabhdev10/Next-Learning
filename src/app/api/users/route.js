@@ -9,10 +9,21 @@ export function GET() {
   ];
   return NextResponse.json(users);
 }
-export function POST(request) {
+export async function POST(request) {
     console.log("Post request api Called");
-    console.log('Request body :',request.body);
+            // console.log('Request body :',request.body);
+            // console.log('Request headers:',request.headers);
+            // console.log('Request method:',request.method);
+            // console.log('Request url:',request.url);
+            // console.log('Request nextUrl:',request.nextUrl.pathname);
+            // console.log(`Request nextUrl searchParams:`,request.nextUrl.searchParams);         
+         
+        //    const jsonData= await request.json();
+           const textData= await request.text();    
+              console.log('Request text:',textData);
+            //   console.log('Request jsonData:',jsonData);
 
+            // i have comment out the jsonData because it is not working because Decide whether you need the body as JSON or plain text. If you need JSON, remove the request.text()
   return NextResponse.json({
     message: "POST request successful",
     status: 200,
