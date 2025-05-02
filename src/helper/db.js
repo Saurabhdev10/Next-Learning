@@ -10,15 +10,15 @@ export const connectDB = async () => {
 
 //testing and creating new user 
 
-const user=new User({
-  name: "John Doe", 
-  email: "sauraabh@gmail.com",
-  password: "12345678", 
-  about: "Software Engineer",
-  profilePic: "https://www.gravatar.com/avatar", });
+// const user=new User({
+//   name: "John Doe", 
+//   email: "sauraabh@gmail.com",
+//   password: "12345678", 
+//   about: "Software Engineer",
+//   profilePic: "https://www.gravatar.com/avatar", });
 
-  await user.save();
-   console.log("User created successfully");
+//   await user.save();
+//    console.log("User created successfully");
 
 
 
